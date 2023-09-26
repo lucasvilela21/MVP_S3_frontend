@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>MVP</title>
+</head>
+
+<body>
+     <!-- Cabeçalho de informações do sistema -->
+    <header>
+        <div class="title">
+            <h2>Feira da APAE de Mogi das Cruzes</h2>
+        </div>
+        <div class="banner">
+            <img src="rsc/APAE_2.jpg">
+        </div>
+    </header>
+
+
+    <div class="CurrencyInfo">
+        <!-- Atualizar informações sobre o clima -->
+            <p class="Dolar"><span>Dolar: U$1,00</span> <span id="DolarCurrency">Dolar</span></p>
+            <p class="Euro"><span>Euro: €</span><span id="EuroCurrency">Euro</span></p>
+    </div>
+
+    <ul class="newsItemsUl">
+        <!-- Opções para adicionar um novo Artesão -->
+        <section class="newItemArtesao">
+            <input type="text" id="newBox" placeholder="Box:">
+            <input type="text" id="newArtesao" placeholder="Nome do Artesão:">
+            <input type="text" id="newCelular" placeholder="Celular:">
+            <span onclick="newArtesao()" class="addBtnArtesao">Adicionar</span>
+            <span onclick="alteraArtesao()" class="addBtnArtesao">Alterar</span>
+        </section>
+
+        <!-- Opções para adicionar um novo Artesão -->
+        <section class="newItemVenda">
+            <input type="text" id="BoxArtesao" placeholder="Box:">
+            <input type="text" id="newValor" placeholder="Valor:">
+            <input type="text" id="newPagamento" placeholder="Forma de Pagamento:">
+            <span onclick="newVenda()" class="addBtnVenda">Adicionar</span>
+        </section>
+    </ul>
+
+    <!-- Tabela com items existentes -->
+    <div class="items">
+		<div class="column">
+            <table id="myTableArtesao">
+                <tr>
+                    <th class="five">Box</th>
+                    <th class="fifteen">Nome</th>
+                    <th class="eighty">Celular</th>
+                    <th class="five"><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="15px" height="15px"></th>
+                </tr>
+            </table>
+        </div>
+        <div class="column">	
+            <table id="myTableVenda">
+                <tr>
+                    <th class="five">Box</th>
+                    <th class="five">Valor</th>
+                    <th class="fourty">Pagamento</th>
+                    <th class="five"><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="15px" height="15px"></th>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
+
+
