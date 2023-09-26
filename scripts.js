@@ -123,7 +123,7 @@ const postVenda = async (inputBox, InputValor,  inputPagamento) => {
 		getListVendas()
 	  alert("Item adicionado!")
 	} else {
-		alert("Insira um brinco ja cadastrado");
+		alert("Insira um Artesao ja cadastrado");
 	}
   response.json()})
   .catch((error) => {
