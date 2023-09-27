@@ -36,7 +36,7 @@ const getListVendas = async () => {
   })
     .then((response) => response.json())
     .then((data) => {
-      data.vendas.forEach(item => insertListVenda(item.box_artesao, item.valor, item.forma_pagamento))
+      data.vendas.forEach(item => insertListVenda(item.box, item.valor, item.pagamento))
     })      
     .catch((error) => {
       console.error('Error:', error);
@@ -123,7 +123,7 @@ const postVenda = async (inputBox, InputValor,  inputPagamento) => {
 		getListVendas()
 	  alert("Item adicionado!")
 	} else {
-		alert("Insira um brinco ja cadastrado");
+		alert("Insira um Artesao ja cadastrado");
 	}
   response.json()})
   .catch((error) => {
